@@ -1,0 +1,7 @@
+#!/bin/sh
+
+export VSCNVIM_CACHE_DIR="${VSCNVIM_CACHE_DIR:-$HOME/.cache/vsnvim}"
+export VSCNVIM_CONFIG_DIR="${VSCNVIM_CONFIG_DIR:-$HOME/.config/vscnvim}"
+export VSCNVIM_DATA_DIR="${VSCNVIM_DATA_DIR:-$HOME/.local/share/vscnvim}"
+
+exec nvim -u "$HOME/.config/vscnvim/init.lua" "$@"
